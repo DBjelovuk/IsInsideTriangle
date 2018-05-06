@@ -24,7 +24,8 @@ func main() {
                                 { x: 30, y: 20 },
                                 { x: 20, y: 0 }}
     myTriangle := triangle { points: trianglePoints }
-    fmt.Println("Is inside triangle?: ", isInTriagle(myTriangle, vector { x: 25, y: 10 }))
+    fmt.Println("Is (20, 10) inside triangle?: ", isInTriagle(myTriangle, vector { x: 20, y: 10 }))
+    fmt.Println("Is (25, 5) inside triangle?: ", isInTriagle(myTriangle, vector { x: 25, y: 5 }))
 }
 
 func isUnder(line line, point vector) bool {
